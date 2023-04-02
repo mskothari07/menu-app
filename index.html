@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu-app</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="navbar">
-        Hello World
+    <div class="container">
+        <div class="login-left">
+            <div class="login-header">
+                <h1>Welcome to app</h1>
+                <p>Please login to access</p>
+            </div>
+            <form class="login-form">
+                <div class="form-item">
+                    <label for="username">Username</label>
+                    <input type="text" id="email" />
+                </div>
+                <div class="form-item">
+                    <label for="password">Password </label>
+                    <input type="password" id="password" />
+                </div>
+                <div class="form-checkbox">
+                    <div class="checkbox">
+                        <input type="checkbox" id="remeberme" <label for="remeberme" id="checkboxLable">Remember me
+                        </label>
+                    </div>
+                </div>
+                <button type="button" class="sign-in">Sign In</button>
+                <div class="login-form-footer">
+                    <!-- Google Login -->
+                    <a href="#" class="logo"><img width="30"
+                            src="https://seeklogo.com/images/G/google-2015-logo-65BBD07B01-seeklogo.com.png"
+                            alt="Google Login">Google Login</a>
+                    <!-- Linkedin Login -->
+                    <a href="#" class="logo"><img width="30" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                            alt="Linkedin Login"> Linkedin
+                        Login
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div class="login-right">
+            <img src="login.png" alt="">
+        </div>
     </div>
 </body>
+
 </html>

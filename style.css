@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 40px;
+    margin: 0;
+    background: linear-gradient(90deg, #131086, #b621f3)
+}
+
+.container {
+    min-height: calc(100vh - 40px * 2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.login-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    background-color: white;
+    padding-right: 80px;
+}
+.login-right {
+    background-color: #eee;
+    display: flex; 
+    justify-content: center; 
+}
+.login-header {
+    width: 450px;
+}
+.login-header h1 p {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.form-item label:not(checkboxLable) {
+    display: inline-block;
+    background-color: white;
+    padding-top: 20px;
+}
+input[type="text"],
+input[type="password"] {
+    border: 1px solid black;
+    height: 55px;
+    padding: 0 0rem;
+    width: 100%;
+    outline: none;
+    transition: background 0.5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
+.form-checkbox {
+    padding-bottom: 20px;
+    padding-top: 5px;
+    font-size: large;
+}
+
+.login-form-footer{
+    padding-top: 20px;
+}
+.sign-in{
+    background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+}
+.sign-in:hover{
+    background-color: #0062cc;
+}
